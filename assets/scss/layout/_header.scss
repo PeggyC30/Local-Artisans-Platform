@@ -1,0 +1,28 @@
+.divider {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: $gray-700;
+  @include desktops {
+    height: 16px;
+  }
+}
+.icon {
+  width: 48px;
+  height: 48px;
+  // color: $gray-900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+.badge-dot {
+  top: 8px;
+  right: 1px;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+}
+.navbar .bi {
+  font-size: 24px;
+}
