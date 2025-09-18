@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">
-  <div class="container position-relative">
-    <a class="navbar-brand d-flex p-0 me-auto" href="#">
+  <div class="container position-relative d-flex justify-content-between">
+    <a class="navbar-brand d-flex p-0 me-auto me-lg-0" href="#">
       <img src="../assets/images/logo-sm.png" alt="logo-sm" class="d-block d-lg-none me-4" /><img
         src="../assets/images/logo-lg.png"
         alt="logo-lg"
@@ -8,18 +8,26 @@
       />
       <div>
         <div class="fs-6 fs-lg-5 fw-bold mb">職人匠心</div>
-        <div class="d-flex fs-lg-8 align-items-center fs-9">
+        <div class="d-flex fs-lg-8 align-items-center fs-9 ls-0">
           <div>在地手做</div>
-          <div class="divider mx-4"></div>
+          <div class="divider-logo mx-4"></div>
           <div>生活溫度</div>
         </div>
       </div>
     </a>
+    <div class="d-none d-lg-flex hearder-lg-search-weight">
+      <form class="position-relative w-100">
+        <i class="bi bi-search position-absolute ps-6"></i>
+        <input
+          type="search"
+          class="form-control border-0 border-bottom ps-18 fs-7 ls-0"
+          id="headerSearchInput"
+          placeholder="季節主打商品熱賣中"
+        />
+      </form>
+    </div>
 
-    <div
-      class="collapse collapse-horizontal position-absolute start-0 end-0 bg-white py-6 z-1"
-      id="collapseWidthHeader"
-    >
+    <div class="collapse collapse-horizontal position-absolute start-0 end-0 bg-white z-1" id="collapseWidthHeader">
       <div class="d-flex">
         <form class="position-relative w-100">
           <i class="bi bi-search position-absolute ps-6"></i>
@@ -43,7 +51,7 @@
       </div>
     </div>
     <button
-      class="btn icon"
+      class="btn icon d-lg-none"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#collapseWidthHeader"
@@ -52,15 +60,23 @@
     >
       <i class="bi bi-search"></i>
     </button>
-
-    <a href="#" class="icon">
-      <i class="bi bi-cart position-relative">
-        <span class="position-absolute badge-dot bg-danger rounded-circle">
-          <span class="visually-hidden">New alerts</span>
-        </span>
-      </i>
-    </a>
-    <a href="#"><img src="../assets/images/member-photo.png" alt="photo" /></a>
+    <div class="d-flex">
+      <div class="d-none d-lg-flex align-items-center fs-7 ls-0 me-12">
+        <a href="#" class="">產品分類</a>
+        <div class="divider-navbar mx-12"></div>
+        <a href="#" class="">關於職人匠心</a>
+        <div class="divider-navbar mx-12"></div>
+        <a href="#" class="">專欄文章</a>
+      </div>
+      <a href="#" class="icon">
+        <i class="bi bi-cart position-relative">
+          <span class="position-absolute badge-dot bg-danger rounded-circle">
+            <span class="visually-hidden">New alerts</span>
+          </span>
+        </i>
+      </a>
+      <a href="#"><img src="../assets/images/member-photo.png" alt="photo" /></a>
+    </div>
     <button
       class="icon border-0 bg-white d-block d-lg-none"
       type="button"

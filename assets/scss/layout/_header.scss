@@ -1,4 +1,4 @@
-.divider {
+.divider-logo {
   display: inline-block;
   width: 1px;
   height: 12px;
@@ -26,24 +26,17 @@
 .navbar .bi {
   font-size: 24px;
 }
-// .full-height {
-//   position: fixed;
-//   top: 64px; /* 從 navbar 底下開始 */
-//   left: 0;
-//   width: 100%;
-//   height: calc(100vh - 64px); /* 扣掉 navbar 高度 */
-//   background: white;
-//   // overflow-y: auto;
-//   z-index: 1040; /* 比 navbar 低一層，避免蓋住 */
-// }
+
 .offcanvas.offcanvas-top {
   top: 104px; /* navbar 高度 */
   height: calc(100% - 104px);
 }
-
-// .offcanvas.from-navbar.show {
-//   transform: translateY(0);
-// }
-// .offcanvas-backdrop {
-//   display: none !important;
-// }
+.hearder-lg-search-weight {
+  width: 240px;
+}
+.divider-navbar {
+  display: inline-block;
+  width: 1px;
+  height: 32px;
+  background-color: $gray-500;
+}
