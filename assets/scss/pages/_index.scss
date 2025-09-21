@@ -9,9 +9,8 @@
   .sale-text {
     padding-left: 100%;
     white-space: nowrap;
-
     animation-name: marquee-index-sale;
-    animation-duration: 7s;
+    animation-duration: 12s;
     animation-iteration-count: infinite;
     animation-direction: normal;
     animation-timing-function: linear;
@@ -23,5 +22,71 @@
         transform: translateX(-100%);
       }
     }
+  }
+}
+
+$gradient: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.6) 80%, #fff 100%);
+.swiper-1 {
+  width: 100%;
+  height: 600px;
+  z-index: 1;
+  .swiper-wrapper {
+    width: 100%;
+    height: 600px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+
+    // background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.6) 80%, #fff 100%);
+  }
+  .slide-1 {
+    background-image: $gradient, url("../assets/images/index-header-bg-1.png");
+  }
+  .slide-2 {
+    background-image: $gradient, url("../assets/images/index-header-bg-2.png");
+  }
+  .slide-3 {
+    background-image: $gradient, url("../assets/images/index-header-bg-3.png");
+  }
+  .slide-4 {
+    background-image: $gradient, url("../assets/images/index-header-bg-4.png");
+    background-position: 50% 80%;
+  }
+  .slide-5 {
+    background-image: $gradient, url("../assets/images/index-header-bg-5.png");
+    background-position: 50% 80%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    opacity: 0; /* 移除圖案 */
+    width: 44px; /* 保留滑鼠點擊範圍 */
+    height: 100%;
+  }
+  .swiper-pagination {
+    bottom: 16px; /* 從底部往上 */
+    display: flex; /* 將內部子元素變成 flex */
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+    height: 36px; /* 可選，確保高度與 slide 底部 margin 適配 */
+    gap: 16px; /* 圓點或長條間距 */
+  }
+  .swiper-pagination-bullet {
+    width: 28px;
+    height: 4px;
+    border-radius: 0;
+    background-color: $gray-500;
+    opacity: 0.5;
+    --swiper-pagination-bullet-horizontal-gap: 0px;
+
+    &.swiper-pagination-bullet-active {
+      background-color: $gray-900;
+      opacity: 1;
+    }
+  }
+  @include desktops {
+    width: 100%;
+    height: 800px;
   }
 }

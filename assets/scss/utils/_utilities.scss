@@ -8,6 +8,16 @@ $utilities: map-merge(
           responsive: true,
         )
       ),
+    "display":
+      map-merge(
+        map-get($utilities, "display") or (),
+        (
+          property: font-size,
+          class: display,
+          values: $display-font-sizes,
+          responsive: true,
+        )
+      ),
     "letter-spacing": (
       property: letter-spacing,
       class: ls,

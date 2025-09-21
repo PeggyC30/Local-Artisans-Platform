@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <title>index</title>
   </head>
   <body>
@@ -22,9 +23,127 @@
         <div>滿千送百，精美小禮加碼送</div>
       </div>
     </div>
+    <header>
+      <div class="container">
+        <div class="position-relative">
+          <div class="header-text position-absolute z-2 pt-60 pt-lg-48 w-100">
+            <div class="text-gray-900 w-100 d-lg-inline-block">
+              <h1 class="fs-4 display-lg-2 mb-8">感受雙手的溫度</h1>
+              <h2 class="fs-4 display-lg-2 pb-8 border-bottom border-2 border-gray-900 mb-8 d-lg-inline-block">
+                擁抱每一件獨特物品
+              </h2>
+            </div>
+            <a href="#" class="fs-6 lh-sm d-flex align-items-center"
+              >立即選購<i class="bi bi-arrow-up-right-circle icon ms-12"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper swiper-1">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide slide-1"></div>
+          <div class="swiper-slide slide-2"></div>
+          <div class="swiper-slide slide-3"></div>
+          <div class="swiper-slide slide-4"></div>
+          <div class="swiper-slide slide-5"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    </header>
+    <section class="lifestyle-collect overflow-auto">
+      <div class="container d-flex gap-8">
+        <div class="card card-item">
+          <img src="../assets/images/item-cup.png" class="card-img-top" alt="item-cup" />
+          <div class="card-body">
+            <div class="card-text">
+              <div class="d-flex justify-content-between align-items-center">
+                手工陶杯組<i class="bi bi-arrow-up-right-circle icon d-none d-lg-block"></i>
+              </div>
+              <div class="d-flex align-items-center pb-lg-8"><span>NT$</span>3,600</div>
+            </div>
+          </div>
+          <div class="item-tag">手作生活</div>
+          <div class="favorite"><i class="bi bi-heart icon"></i></div>
+        </div>
+
+        <div class="card card-item">
+          <img src="../assets/images/item-cup.png" class="card-img-top" alt="item-cup" />
+          <div class="card-body">
+            <div class="card-text">
+              <div>手工陶杯組</div>
+              <div><span>NT$</span>3,600</div>
+            </div>
+          </div>
+          <div class="item-tag">手作生活</div>
+          <div class="favorite"><i class="bi bi-heart icon"></i></div>
+        </div>
+
+        <div class="card card-item">
+          <img src="../assets/images/item-cup.png" class="card-img-top" alt="item-cup" />
+          <div class="card-body">
+            <div class="card-text">
+              <div>手工陶杯組</div>
+              <div><span>NT$</span>3,600</div>
+            </div>
+          </div>
+          <div class="item-tag">手作生活</div>
+          <div class="favorite"><i class="bi bi-heart icon"></i></div>
+        </div>
+
+        <div class="card card-item">
+          <img src="../assets/images/item-cup.png" class="card-img-top" alt="item-cup" />
+          <div class="card-body">
+            <div class="card-text">
+              <div>手工陶杯組</div>
+              <div><span>NT$</span>3,600</div>
+            </div>
+          </div>
+          <div class="item-tag">手作生活</div>
+          <div class="favorite"><i class="bi bi-heart icon"></i></div>
+        </div>
+      </div>
+    </section>
 
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+      const swiper1 = new Swiper(".swiper-1", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: "auto",
+        autoplay: {
+          delay: 3000,
+        },
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
