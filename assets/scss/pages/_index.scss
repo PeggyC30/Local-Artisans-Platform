@@ -42,20 +42,20 @@ $gradient: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 25
     // background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.6) 80%, #fff 100%);
   }
   .slide-1 {
-    background-image: $gradient, url("../assets/images/index-header-bg-1.png");
+    background-image: $gradient, url("/assets/images/index-header-bg-1.png");
   }
   .slide-2 {
-    background-image: $gradient, url("../assets/images/index-header-bg-2.png");
+    background-image: $gradient, url("/assets/images/index-header-bg-2.png");
   }
   .slide-3 {
-    background-image: $gradient, url("../assets/images/index-header-bg-3.png");
+    background-image: $gradient, url("/assets/images/index-header-bg-3.png");
   }
   .slide-4 {
-    background-image: $gradient, url("../assets/images/index-header-bg-4.png");
+    background-image: $gradient, url("/assets/images/index-header-bg-4.png");
     background-position: 50% 80%;
   }
   .slide-5 {
-    background-image: $gradient, url("../assets/images/index-header-bg-5.png");
+    background-image: $gradient, url("/assets/images/index-header-bg-5.png");
     background-position: 50% 80%;
   }
   .swiper-button-next,
