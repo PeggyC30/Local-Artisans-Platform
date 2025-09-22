@@ -90,3 +90,37 @@ $gradient: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 25
     height: 800px;
   }
 }
+
+.section-title {
+  display: inline-block;
+  font-size: 28px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid $gray-900;
+  @include large-desktops {
+    font-size: 40px;
+    width: 360px;
+  }
+}
+.overflow-x-auto {
+  // 小螢幕隱藏卷軸
+  // @include mobile {
+  //   &::-webkit-scrollbar {
+  //     display: none;
+  //   }
+  // }
+
+  // 大螢幕顯示卷軸
+  @include pad {
+    &::-webkit-scrollbar {
+      height: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $gray-500;
+      border-radius: 3px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: $gray-200;
+      border-radius: 3px;
+    }
+  }
+}
