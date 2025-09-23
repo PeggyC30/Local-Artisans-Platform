@@ -60,9 +60,10 @@ $gradient: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 25
   }
   .swiper-button-next,
   .swiper-button-prev {
-    opacity: 0; /* 移除圖案 */
+    opacity: 0.5; /* 移除圖案 */
     width: 44px; /* 保留滑鼠點擊範圍 */
-    height: 100%;
+    // height: 100%;
+    color: $gray-500;
   }
   .swiper-pagination {
     bottom: 16px; /* 從底部往上 */
@@ -122,5 +123,35 @@ $gradient: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 25
       background-color: $gray-200;
       border-radius: 3px;
     }
+  }
+}
+.handmade-collection {
+  img {
+    object-fit: cover;
+  }
+  .img-wrap {
+    height: 506px;
+    @include large-desktops {
+      height: 406px;
+    }
+  }
+  .img-handmade-1 {
+    width: 320px;
+    height: 360px;
+    position: absolute;
+    z-index: 2;
+  }
+  .img-handmade-2 {
+    width: 260px;
+    height: 280px;
+    position: absolute;
+    top: 226px;
+    right: 0;
+    @include large-desktops {
+      top: 126px;
+    }
+  }
+  a:hover {
+    opacity: 0.8;
   }
 }
